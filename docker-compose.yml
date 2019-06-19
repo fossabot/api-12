@@ -1,0 +1,13 @@
+# docker-compose.yml
+version: "3"
+services:
+  artemis-api:
+    build: .
+    depends_on:
+      - postgres
+    ports:
+      - "4445:4445"
+  postgres:
+    image: postgres:11.1-alpine
+    environment:
+      POSTGRES_PASSWORD: postgres

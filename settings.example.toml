@@ -1,0 +1,7 @@
+port = 4445
+[pg]
+	user = "epic"
+	pass = "stuff"
+	db = "yes"
+[patreon]
+	secret = "secret"
